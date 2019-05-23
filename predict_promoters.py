@@ -6,6 +6,12 @@ import IPython
 import matplotlib.pyplot as plt
 import time
 
+##
+# @file
+# This file implements function that builds and trains neural network for TSS prediction
+# using specified hyper-parameters, it converges after ~20 epochs reaching ~95% accuracy.
+#
+
 from misc import *
 
 allow_growth_for_default_session()
@@ -89,12 +95,13 @@ def buid_model_and_train(use_inputs,
     test_data["seq_input"] = data["test_seq"]
     # and finally output of 2conv layer
     if "seq-2conv" in use_inputs:
-      seq_2conv       = tf.keras.layers.Conv1D(10, 5, 1, name="seq_2conv")(seq_maxpool)
+      seq_2conv       = tf.keras.layers.Conv1D(10, 3, 1, name="seq_2conv")(seq_maxpool)
+      #seq_2maxpool     = tf.keras.layers.MaxPool1D(10, name="seq_maxpool")(seq_2conv)
       seq_flatten3    = tf.keras.layers.Flatten(name="seq_2conv_flatten")(seq_2conv)
       to_concat.append(seq_flatten3)
 
   
-  if "CG" in use_inputs:
+  if "CG-conv" in use_inputs:
     CG_input         = tf.keras.Input(shape=(1000,1), name="CG_input")
     #CG_avgpool       = tf.keras.layers.AveragePooling1D(20)(CG_input)
     CG_conv        = tf.keras.layers.Conv1D(100, 5, 1, name="CG_conv")(CG_input)
@@ -202,11 +209,18 @@ def buid_model_and_train(use_inputs,
 
 
 def main():
-  use = ["seq", "seq-2conv", "CG-avg", "COV", "METH", "CA", "SNPs"]
+  '''
+  When this script is ran as main program, it constructs neural network model using
+  hyper-parameters defined here, and train the network on the input data.
+  It expects one argument: filename of table, where all input datasets are defined.
+  Read more in documentation of function read_input_files
+  '''
+  # select
+  use = ["seq", "seq-2conv", "CG-avg", "COV"] #, "METH", "CA", "SNPs"
+  dense = [50]
   l1 = 0.02
   l2 = 0.00
   optimizer = "Adam"
-  dense = [50]
   distance=350
   inp = read_input_files(sys.argv[1])
   m = buid_model_and_train(use,
@@ -214,7 +228,7 @@ def main():
                            epochs=30,
                            l1=l1,
                            l2=l2,
-                           dense=d,
+                           dense=dense,
                            optimizer=optimizer,
                            distance=distance,
                            activation="relu")

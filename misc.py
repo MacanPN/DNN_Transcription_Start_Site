@@ -1,6 +1,11 @@
 import tensorflow as tf
 import numpy as np
 
+##
+# @file
+# This file implements various miscelenious functions that used in the project
+#
+
 Number2Base = {0:'A', 1:'C', 2:'G', 3:'T'}
 
 def filter2motif(a):

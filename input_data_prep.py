@@ -3,6 +3,12 @@ import pandas as pd
 import sys
 import IPython
 
+##
+# @file
+# This file implements function used for reading, re-shaping and pre-processing the input
+# datasets for TSS prediction
+#
+
 def read_input_files(filename):
   ''' This function implements the loading of the input data, shuffling it and spliting it
       into training and testing set. 
