@@ -1,0 +1,72 @@
+\hypertarget{predict__promoters_8py}{}\section{predict\+\_\+promoters.\+py File Reference}
+\label{predict__promoters_8py}\index{predict\+\_\+promoters.\+py@{predict\+\_\+promoters.\+py}}
+
+
+This file implements function that builds and trains neural network for T\+SS prediction using specified hyper-\/parameters, it converges after $\sim$20 epochs reaching $\sim$95\% accuracy.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{predict__promoters_8py_adfc6c6e4919d2b6fe2a086f4f4fa49a4}{predict\+\_\+promoters.\+buid\+\_\+model\+\_\+and\+\_\+train} (use\+\_\+inputs, data, epochs=10, l1=0.\+0, l2=0.\+01, dense=\mbox{[}256\mbox{]}, optimizer=\char`\"{}Adam\char`\"{}, learning\+\_\+rate=0.\+001, model=None, distance=5, activation=\char`\"{}relu\char`\"{})
+\item 
+def \hyperlink{predict__promoters_8py_a6ed239a522fc59550787770204603f49}{predict\+\_\+promoters.\+main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{predict__promoters_8py_a57c0d0efd540b154071f309d0e6c02fe}\label{predict__promoters_8py_a57c0d0efd540b154071f309d0e6c02fe}} 
+int {\bfseries predict\+\_\+promoters.\+test\+\_\+size} = 8000
+\item 
+\mbox{\Hypertarget{predict__promoters_8py_a6092fd065f7f92afdbf8d0cb2c34a600}\label{predict__promoters_8py_a6092fd065f7f92afdbf8d0cb2c34a600}} 
+int {\bfseries predict\+\_\+promoters.\+T\+S\+S\+\_\+pos} = 500
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file implements function that builds and trains neural network for T\+SS prediction using specified hyper-\/parameters, it converges after $\sim$20 epochs reaching $\sim$95\% accuracy. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{predict__promoters_8py_file_adfc6c6e4919d2b6fe2a086f4f4fa49a4}\label{predict__promoters_8py_file_adfc6c6e4919d2b6fe2a086f4f4fa49a4}} 
+\index{predict\+\_\+promoters.\+py@{predict\+\_\+promoters.\+py}!buid\+\_\+model\+\_\+and\+\_\+train@{buid\+\_\+model\+\_\+and\+\_\+train}}
+\index{buid\+\_\+model\+\_\+and\+\_\+train@{buid\+\_\+model\+\_\+and\+\_\+train}!predict\+\_\+promoters.\+py@{predict\+\_\+promoters.\+py}}
+\subsubsection{\texorpdfstring{buid\+\_\+model\+\_\+and\+\_\+train()}{buid\_model\_and\_train()}}
+{\footnotesize\ttfamily def predict\+\_\+promoters.\+buid\+\_\+model\+\_\+and\+\_\+train (\begin{DoxyParamCaption}\item[{}]{use\+\_\+inputs,  }\item[{}]{data,  }\item[{}]{epochs = {\ttfamily 10},  }\item[{}]{l1 = {\ttfamily 0.0},  }\item[{}]{l2 = {\ttfamily 0.01},  }\item[{}]{dense = {\ttfamily \mbox{[}256\mbox{]}},  }\item[{}]{optimizer = {\ttfamily \char`\"{}Adam\char`\"{}},  }\item[{}]{learning\+\_\+rate = {\ttfamily 0.001},  }\item[{}]{model = {\ttfamily None},  }\item[{}]{distance = {\ttfamily 5},  }\item[{}]{activation = {\ttfamily \char`\"{}relu\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function builds tensorflow.keras model and trains it on given input data.
+
+Params:
+ - use_inputs: list of input types to be used for TSS detection. Chsoose from:
+   "seq":       use DNA sequence (including one 1D convolution)
+   "seq-2conv": also use second 1D convolution on the DNA sequence
+   "CG":        use CG-skew data via 1D convolution layer
+   "CG-avg":    use CG-skew data via simlpe average pooling (no convolution)
+   "CA":        use presence of CA di-nucleotide (directm only in <-20;20> interval)
+   "COV":       use Rna-seq coverage data
+   "METH":      use methylation data (average pooling)
+   "SNPs":      use SNP data (average pooling)
+ 
+ - data: dictionary containing input data in form of pandas.Dataframe(s)
+ - hidden: list of integers. Length of list = number of hidden dense layers. Each number
+           in the list defines size of a hidden layer
+ - epochs: number of epochs we want to run (in model.fit())
+ - l1: l1 regularization coefficient
+ - l2: l2 regularization coefficient
+ - optimizer: optimizer type to use. Choose one of: ["Adam", "SGD", "RMSprop", "Adagrad", "Adadelta", "Adamax", "Nadam"]
+              description of optimizers here: https://keras.io/optimizers/
+ - activation: activation function for dense layers.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{predict__promoters_8py_file_a6ed239a522fc59550787770204603f49}\label{predict__promoters_8py_file_a6ed239a522fc59550787770204603f49}} 
+\index{predict\+\_\+promoters.\+py@{predict\+\_\+promoters.\+py}!main@{main}}
+\index{main@{main}!predict\+\_\+promoters.\+py@{predict\+\_\+promoters.\+py}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def predict\+\_\+promoters.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}When this script is ran as main program, it constructs neural network model using
+hyper-parameters defined here, and train the network on the input data.
+It expects one argument: filename of table, where all input datasets are defined.
+Read more in documentation of function read_input_files
+\end{DoxyVerb}
+ 

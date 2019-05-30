@@ -1,0 +1,277 @@
+\hypertarget{examine__model__using__activations_8py}{}\section{examine\+\_\+model\+\_\+using\+\_\+activations.\+py File Reference}
+\label{examine__model__using__activations_8py}\index{examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}}
+
+
+This file implements various functions that can be used to disect and study the neural network trained using \hyperlink{predict__promoters_8py}{predict\+\_\+promoters.\+py}.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a71c48594f6647bb1bd430175b722c343}\label{examine__model__using__activations_8py_a71c48594f6647bb1bd430175b722c343}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neuron\+\_\+represents} (layer, nwl)
+\item 
+def \hyperlink{examine__model__using__activations_8py_ac8cfc10d19f5946cee2694411057660a}{examine\+\_\+model\+\_\+using\+\_\+activations.\+neuron\+\_\+belongs\+\_\+to} (n)
+\item 
+def \hyperlink{examine__model__using__activations_8py_a89264b35a51d8733d22e97354fb06213}{examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+filter} (f, filename=None)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a9314ccaa90a958f2d1c1e9fdc4a5c8f9}\label{examine__model__using__activations_8py_a9314ccaa90a958f2d1c1e9fdc4a5c8f9}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+hyperfilter} (f, filename=None)
+\item 
+def \hyperlink{examine__model__using__activations_8py_a3a7803248408c02ffac8e8ac607f4da5}{examine\+\_\+model\+\_\+using\+\_\+activations.\+neuron\+\_\+label} (neuron)
+\item 
+def \hyperlink{examine__model__using__activations_8py_aec6c3257c480c0275b133713f65db1f6}{examine\+\_\+model\+\_\+using\+\_\+activations.\+important\+\_\+for\+\_\+layer} (o, layer, important\+\_\+pos, important\+\_\+neg, prev, ratio=0.\+3)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a0de6b35f47b2c89de717264df1763efb}\label{examine__model__using__activations_8py_a0de6b35f47b2c89de717264df1763efb}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+activation\+\_\+contribution} (o)
+\item 
+def \hyperlink{examine__model__using__activations_8py_ac4689bec31921c43cf99329ec645f878}{examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+important\+\_\+neurons} (neurons, flat\+\_\+layer=True)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a660042dc47ce15dc02f5222154b52ff4}\label{examine__model__using__activations_8py_a660042dc47ce15dc02f5222154b52ff4}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+importance\+\_\+frequency} (\+\_\+p, \+\_\+n, how\+\_\+many=20, start=0, fname=None)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ab7c056a35000bb948b3ab268a8b45a4f}\label{examine__model__using__activations_8py_ab7c056a35000bb948b3ab268a8b45a4f}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+importance\+\_\+by\+\_\+layer} (\+\_\+p, \+\_\+n, how\+\_\+many=20, start=0, fname=None)
+\item 
+def \hyperlink{examine__model__using__activations_8py_a10c4322677ed09b161c4888e29cf7185}{examine\+\_\+model\+\_\+using\+\_\+activations.\+sum\+\_\+activations\+\_\+by\+\_\+layer} (act\+\_\+pos, act\+\_\+n)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a8316767a1a8da1be565f1a57c322b127}\label{examine__model__using__activations_8py_a8316767a1a8da1be565f1a57c322b127}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+activations\+\_\+summed\+\_\+by\+\_\+layer} (df, fname=None)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a77fa1cc23e970c6c4d538d78a75d9e2e}\label{examine__model__using__activations_8py_a77fa1cc23e970c6c4d538d78a75d9e2e}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+shelveit} ()
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_aeaac474aaf19c62c9255307d73e385af}\label{examine__model__using__activations_8py_aeaac474aaf19c62c9255307d73e385af}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+filter\+\_\+weights\+\_\+over\+\_\+position} (f, tick\+\_\+interval=50)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a24cb775dbcbc497b612144e3b6a6a4f5}\label{examine__model__using__activations_8py_a24cb775dbcbc497b612144e3b6a6a4f5}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+inp} = read\+\_\+input\+\_\+files(sys.\+argv\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a3f59d1a1df59f07d1d697a99cc18e2b2}\label{examine__model__using__activations_8py_a3f59d1a1df59f07d1d697a99cc18e2b2}} 
+int {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+out} = 7
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a9594ebcc247c4b10adc434063c54bd1c}\label{examine__model__using__activations_8py_a9594ebcc247c4b10adc434063c54bd1c}} 
+int {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+hidden} = 6
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_aeae72b500777a4554340a17f984382d6}\label{examine__model__using__activations_8py_aeae72b500777a4554340a17f984382d6}} 
+int {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+flat} = 5
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a814906dba5d2280b1f7f21decad15556}\label{examine__model__using__activations_8py_a814906dba5d2280b1f7f21decad15556}} 
+string {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+filter\+\_\+directory} = \char`\"{}./filters\+\_\+easy\+\_\+model/\char`\"{}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a8d636642d5c06198a0d3ff4af25cca87}\label{examine__model__using__activations_8py_a8d636642d5c06198a0d3ff4af25cca87}} 
+int {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+T\+S\+S\+\_\+pos} = 500
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a14371f05cde11c2458cfcfee0b517eb4}\label{examine__model__using__activations_8py_a14371f05cde11c2458cfcfee0b517eb4}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+model} = tf.\+keras.\+models.\+load\+\_\+model(model\+\_\+file)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a1a0195be3e887485afe49037777d03cc}\label{examine__model__using__activations_8py_a1a0195be3e887485afe49037777d03cc}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+n\+\_\+layers} = len(model.\+layers)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a0787fbb77448d5d71d22553de9d9933b}\label{examine__model__using__activations_8py_a0787fbb77448d5d71d22553de9d9933b}} 
+int {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+out\+\_\+l} = len(model.\+layers)-\/1
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_aa147badb3e376056fd895b5f6ed8823f}\label{examine__model__using__activations_8py_aa147badb3e376056fd895b5f6ed8823f}} 
+int {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+dense\+\_\+l} = len(model.\+layers)-\/2
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a3277af150244ee59ac8b5a88bca5e725}\label{examine__model__using__activations_8py_a3277af150244ee59ac8b5a88bca5e725}} 
+int {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+concat\+\_\+l} = len(model.\+layers)-\/3
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a6096607a99d16fc57d6917407a4f525f}\label{examine__model__using__activations_8py_a6096607a99d16fc57d6917407a4f525f}} 
+list {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+n} = \mbox{[}l.\+name for l in model.\+layers\mbox{]}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ab91f2bfc1fed1a0803854d877c224aee}\label{examine__model__using__activations_8py_ab91f2bfc1fed1a0803854d877c224aee}} 
+list {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+w} = \mbox{[}l.\+get\+\_\+weights() for l in model.\+layers\mbox{]}
+\item 
+list {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+outputs}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a61d50fd1d4c391b8824cc9ec95ffb39f}\label{examine__model__using__activations_8py_a61d50fd1d4c391b8824cc9ec95ffb39f}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+functor} = tf.\+keras.\+backend.\+function(inp, outputs )
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ab2e10395f7a489f33952065c2f4a9dc3}\label{examine__model__using__activations_8py_ab2e10395f7a489f33952065c2f4a9dc3}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+pos\+\_\+hidden} = np.\+zeros(model.\+layers\mbox{[}dense\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_acc2656ccc75be43c874b5765799b3a36}\label{examine__model__using__activations_8py_acc2656ccc75be43c874b5765799b3a36}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neg\+\_\+hidden} = np.\+zeros(model.\+layers\mbox{[}dense\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a77f89fb8cf6329eee37ac7e1e8a788c1}\label{examine__model__using__activations_8py_a77f89fb8cf6329eee37ac7e1e8a788c1}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+pos\+\_\+p\+\_\+flat} = np.\+zeros(model.\+layers\mbox{[}concat\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a298dd404d5fdc525eef3a056d991bee8}\label{examine__model__using__activations_8py_a298dd404d5fdc525eef3a056d991bee8}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+pos\+\_\+n\+\_\+flat} = np.\+zeros(model.\+layers\mbox{[}concat\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a99c20d72ef0f81cf435dc97a0750cbe9}\label{examine__model__using__activations_8py_a99c20d72ef0f81cf435dc97a0750cbe9}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neg\+\_\+p\+\_\+flat} = np.\+zeros(model.\+layers\mbox{[}concat\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a53b0811f339e20f1c9f4a3296a6bca53}\label{examine__model__using__activations_8py_a53b0811f339e20f1c9f4a3296a6bca53}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neg\+\_\+n\+\_\+flat} = np.\+zeros(model.\+layers\mbox{[}concat\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a58eaf7e97640dec8971f7e5af6cbb4f0}\label{examine__model__using__activations_8py_a58eaf7e97640dec8971f7e5af6cbb4f0}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+concat\+\_\+contrib\+\_\+pos\+\_\+p} = np.\+zeros(model.\+layers\mbox{[}concat\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a7626ebea8a3ea31f3f001dd8d5e8e464}\label{examine__model__using__activations_8py_a7626ebea8a3ea31f3f001dd8d5e8e464}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+concat\+\_\+contrib\+\_\+pos\+\_\+n} = np.\+zeros(model.\+layers\mbox{[}concat\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a87ad0ec268c051561eac7abcaa099d54}\label{examine__model__using__activations_8py_a87ad0ec268c051561eac7abcaa099d54}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+concat\+\_\+contrib\+\_\+neg\+\_\+p} = np.\+zeros(model.\+layers\mbox{[}concat\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a8e90d87910eed52551b8c1cd941f5808}\label{examine__model__using__activations_8py_a8e90d87910eed52551b8c1cd941f5808}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+concat\+\_\+contrib\+\_\+neg\+\_\+n} = np.\+zeros(model.\+layers\mbox{[}concat\+\_\+l\mbox{]}.output\+\_\+shape\mbox{[}1\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a5a8d930aa95d882f216fb61554d7de6c}\label{examine__model__using__activations_8py_a5a8d930aa95d882f216fb61554d7de6c}} 
+list {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+inputs} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a2c16237f2865ba18591f6fec91043253}\label{examine__model__using__activations_8py_a2c16237f2865ba18591f6fec91043253}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+obj} = eval(inp.\+name.\+split(\char`\"{}\+\_\+\char`\"{})\mbox{[}0\mbox{]})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a4e286e363a8ca624e567c5c519960605}\label{examine__model__using__activations_8py_a4e286e363a8ca624e567c5c519960605}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+o} = functor(inputs)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a0b53d35213f613567bb2aef250091077}\label{examine__model__using__activations_8py_a0b53d35213f613567bb2aef250091077}} 
+list {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+out\+\_\+pos} = \mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_aaa1ba118b8900ecd2fbad807fa5d564f}\label{examine__model__using__activations_8py_aaa1ba118b8900ecd2fbad807fa5d564f}} 
+list {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+out\+\_\+neg} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a323a93d899807d704fc7209be9016bba}\label{examine__model__using__activations_8py_a323a93d899807d704fc7209be9016bba}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+pos\+\_\+p\+\_\+hidden\+\_\+s}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ac993403e7a7b8c7db76220193bc6b956}\label{examine__model__using__activations_8py_ac993403e7a7b8c7db76220193bc6b956}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+pos\+\_\+n\+\_\+hidden\+\_\+s}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ad5000d2b07302ccbda5c349095e63ac8}\label{examine__model__using__activations_8py_ad5000d2b07302ccbda5c349095e63ac8}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neg\+\_\+p\+\_\+hidden\+\_\+s}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a10dfba99f4241047eeda166f9c83dfc2}\label{examine__model__using__activations_8py_a10dfba99f4241047eeda166f9c83dfc2}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neg\+\_\+n\+\_\+hidden\+\_\+s}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ad03ae0abb05fd8ca8c72fea04c803ade}\label{examine__model__using__activations_8py_ad03ae0abb05fd8ca8c72fea04c803ade}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+ratio}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ae79ee5e62c3c8ddc6f63ec57ff33df31}\label{examine__model__using__activations_8py_ae79ee5e62c3c8ddc6f63ec57ff33df31}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+pos\+\_\+hidden\+\_\+s} = pos\+\_\+p\+\_\+hidden\+\_\+s + pos\+\_\+n\+\_\+hidden\+\_\+s
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ad707bf96864eff8e27bc95a734fdafab}\label{examine__model__using__activations_8py_ad707bf96864eff8e27bc95a734fdafab}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neg\+\_\+hidden\+\_\+s} = neg\+\_\+p\+\_\+hidden\+\_\+s + neg\+\_\+n\+\_\+hidden\+\_\+s
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a30bad2074bde3947a7cc0e6009a7fe8e}\label{examine__model__using__activations_8py_a30bad2074bde3947a7cc0e6009a7fe8e}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+pos\+\_\+p\+\_\+flat\+\_\+s}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ad46ee07b29384de903e168c02955c513}\label{examine__model__using__activations_8py_ad46ee07b29384de903e168c02955c513}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+pos\+\_\+n\+\_\+flat\+\_\+s}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_ac8f71478d8618075d1562f1f6526d641}\label{examine__model__using__activations_8py_ac8f71478d8618075d1562f1f6526d641}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neg\+\_\+p\+\_\+flat\+\_\+s}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a764144343a983c305abf7d2f3db2badc}\label{examine__model__using__activations_8py_a764144343a983c305abf7d2f3db2badc}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+neg\+\_\+n\+\_\+flat\+\_\+s}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a04432922a0e30f3c6b8445b8edac2df5}\label{examine__model__using__activations_8py_a04432922a0e30f3c6b8445b8edac2df5}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+ac} = activation\+\_\+contribution(o)
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_af46073f36ee8abb382b65d26a3f6a094}\label{examine__model__using__activations_8py_af46073f36ee8abb382b65d26a3f6a094}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+fname} = model\+\_\+file.\+replace(\char`\"{}.model\char`\"{},\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a73040c4db438cff7e9a356c7a36e48b9}\label{examine__model__using__activations_8py_a73040c4db438cff7e9a356c7a36e48b9}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+how\+\_\+many}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a0b08abcc0bd17f8556383085bf1e9dcb}\label{examine__model__using__activations_8py_a0b08abcc0bd17f8556383085bf1e9dcb}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+fname}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_acc82f61c696ca27b59775691de0cfc9c}\label{examine__model__using__activations_8py_acc82f61c696ca27b59775691de0cfc9c}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+start}
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a5f06e1bf40a913f6dafc7d94875d8486}\label{examine__model__using__activations_8py_a5f06e1bf40a913f6dafc7d94875d8486}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+act\+\_\+pos} = concat\+\_\+contrib\+\_\+pos\+\_\+p + concat\+\_\+contrib\+\_\+pos\+\_\+n
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_af409361366588644a2e12330e803a677}\label{examine__model__using__activations_8py_af409361366588644a2e12330e803a677}} 
+{\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+act\+\_\+neg} = concat\+\_\+contrib\+\_\+neg\+\_\+p + concat\+\_\+contrib\+\_\+neg\+\_\+n
+\item 
+\mbox{\Hypertarget{examine__model__using__activations_8py_a30feccea79c2cb48869e4818b53ddaa4}\label{examine__model__using__activations_8py_a30feccea79c2cb48869e4818b53ddaa4}} 
+def {\bfseries examine\+\_\+model\+\_\+using\+\_\+activations.\+act\+\_\+sum\+\_\+by\+\_\+latyer} = sum\+\_\+activations\+\_\+by\+\_\+layer(act\+\_\+pos, act\+\_\+neg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file implements various functions that can be used to disect and study the neural network trained using \hyperlink{predict__promoters_8py}{predict\+\_\+promoters.\+py}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{examine__model__using__activations_8py_file_aec6c3257c480c0275b133713f65db1f6}\label{examine__model__using__activations_8py_file_aec6c3257c480c0275b133713f65db1f6}} 
+\index{examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}!important\+\_\+for\+\_\+layer@{important\+\_\+for\+\_\+layer}}
+\index{important\+\_\+for\+\_\+layer@{important\+\_\+for\+\_\+layer}!examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}}
+\subsubsection{\texorpdfstring{important\+\_\+for\+\_\+layer()}{important\_for\_layer()}}
+{\footnotesize\ttfamily def examine\+\_\+model\+\_\+using\+\_\+activations.\+important\+\_\+for\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{o,  }\item[{}]{layer,  }\item[{}]{important\+\_\+pos,  }\item[{}]{important\+\_\+neg,  }\item[{}]{prev,  }\item[{}]{ratio = {\ttfamily 0.3} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}As input takes:
+       - Output values of whole network,
+       - Layer number (important neurons of this layer we already have)
+       - List of positively influencing neurons from this layer
+       - List of negatively influencing neurons from this layer
+       - Number of the previous layer. We're finding important neurons in this layer
+       - [optional] propotion of max. contribution to neuron's value to be considered important
+         default 0.3 means that all neurons having abs(activation) at least 0.3*abs(max_activation)
+         are considered important
+    Returns:
+       - list of neurons in "prev" layer supporting result "region is a promoter" 
+         by having POSITIVE value
+       - list of neurons in "prev" layer supporting result "region is a promoter"
+         by having NEGATIVE value
+       - list of neurons in "prev" layer supporting result "region is NOT a promoter"
+         by having POSITIVE value
+       - list of neurons in "prev" layer supporting result "region is NOT a promoter"
+         by having NEGATIVE value
+\end{DoxyVerb}
+ \mbox{\Hypertarget{examine__model__using__activations_8py_file_ac8cfc10d19f5946cee2694411057660a}\label{examine__model__using__activations_8py_file_ac8cfc10d19f5946cee2694411057660a}} 
+\index{examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}!neuron\+\_\+belongs\+\_\+to@{neuron\+\_\+belongs\+\_\+to}}
+\index{neuron\+\_\+belongs\+\_\+to@{neuron\+\_\+belongs\+\_\+to}!examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}}
+\subsubsection{\texorpdfstring{neuron\+\_\+belongs\+\_\+to()}{neuron\_belongs\_to()}}
+{\footnotesize\ttfamily def examine\+\_\+model\+\_\+using\+\_\+activations.\+neuron\+\_\+belongs\+\_\+to (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns description of layer to which a neuron belongs to.\end{DoxyVerb}
+ \mbox{\Hypertarget{examine__model__using__activations_8py_file_a3a7803248408c02ffac8e8ac607f4da5}\label{examine__model__using__activations_8py_file_a3a7803248408c02ffac8e8ac607f4da5}} 
+\index{examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}!neuron\+\_\+label@{neuron\+\_\+label}}
+\index{neuron\+\_\+label@{neuron\+\_\+label}!examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}}
+\subsubsection{\texorpdfstring{neuron\+\_\+label()}{neuron\_label()}}
+{\footnotesize\ttfamily def examine\+\_\+model\+\_\+using\+\_\+activations.\+neuron\+\_\+label (\begin{DoxyParamCaption}\item[{}]{neuron }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates readable label for neuron of flat layer depending on which input layer corresponds to it. \end{DoxyVerb}
+ \mbox{\Hypertarget{examine__model__using__activations_8py_file_a89264b35a51d8733d22e97354fb06213}\label{examine__model__using__activations_8py_file_a89264b35a51d8733d22e97354fb06213}} 
+\index{examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}!plot\+\_\+filter@{plot\+\_\+filter}}
+\index{plot\+\_\+filter@{plot\+\_\+filter}!examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}}
+\subsubsection{\texorpdfstring{plot\+\_\+filter()}{plot\_filter()}}
+{\footnotesize\ttfamily def examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{f,  }\item[{}]{filename = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Plots convolutional filter of bases as barplot showing weights of bases on positions within motif.\end{DoxyVerb}
+ \mbox{\Hypertarget{examine__model__using__activations_8py_file_ac4689bec31921c43cf99329ec645f878}\label{examine__model__using__activations_8py_file_ac4689bec31921c43cf99329ec645f878}} 
+\index{examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}!plot\+\_\+important\+\_\+neurons@{plot\+\_\+important\+\_\+neurons}}
+\index{plot\+\_\+important\+\_\+neurons@{plot\+\_\+important\+\_\+neurons}!examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}}
+\subsubsection{\texorpdfstring{plot\+\_\+important\+\_\+neurons()}{plot\_important\_neurons()}}
+{\footnotesize\ttfamily def examine\+\_\+model\+\_\+using\+\_\+activations.\+plot\+\_\+important\+\_\+neurons (\begin{DoxyParamCaption}\item[{}]{neurons,  }\item[{}]{flat\+\_\+layer = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Plots ?!? \end{DoxyVerb}
+ \mbox{\Hypertarget{examine__model__using__activations_8py_file_a10c4322677ed09b161c4888e29cf7185}\label{examine__model__using__activations_8py_file_a10c4322677ed09b161c4888e29cf7185}} 
+\index{examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}!sum\+\_\+activations\+\_\+by\+\_\+layer@{sum\+\_\+activations\+\_\+by\+\_\+layer}}
+\index{sum\+\_\+activations\+\_\+by\+\_\+layer@{sum\+\_\+activations\+\_\+by\+\_\+layer}!examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}}
+\subsubsection{\texorpdfstring{sum\+\_\+activations\+\_\+by\+\_\+layer()}{sum\_activations\_by\_layer()}}
+{\footnotesize\ttfamily def examine\+\_\+model\+\_\+using\+\_\+activations.\+sum\+\_\+activations\+\_\+by\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{act\+\_\+pos,  }\item[{}]{act\+\_\+n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}app = activation contribution of neuron on training examples, where the \end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{examine__model__using__activations_8py_file_a321033a21248ef6ab2011f5d7b562e47}\label{examine__model__using__activations_8py_file_a321033a21248ef6ab2011f5d7b562e47}} 
+\index{examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}!outputs@{outputs}}
+\index{outputs@{outputs}!examine\+\_\+model\+\_\+using\+\_\+activations.\+py@{examine\+\_\+model\+\_\+using\+\_\+activations.\+py}}
+\subsubsection{\texorpdfstring{outputs}{outputs}}
+{\footnotesize\ttfamily list examine\+\_\+model\+\_\+using\+\_\+activations.\+outputs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [layer.output \textcolor{keywordflow}{for} layer \textcolor{keywordflow}{in} model.layers           \textcolor{comment}{# all layer outputs}
+2                              \textcolor{keywordflow}{if} layer.name \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} model.input\_names]
+\end{DoxyCode}

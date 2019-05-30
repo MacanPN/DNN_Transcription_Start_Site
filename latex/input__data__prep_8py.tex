@@ -1,0 +1,41 @@
+\hypertarget{input__data__prep_8py}{}\section{input\+\_\+data\+\_\+prep.\+py File Reference}
+\label{input__data__prep_8py}\index{input\+\_\+data\+\_\+prep.\+py@{input\+\_\+data\+\_\+prep.\+py}}
+
+
+This file implements function used for reading, re-\/shaping and pre-\/processing the input datasets for T\+SS prediction.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{input__data__prep_8py_a606a19f2b7d753eea8e32d5160892457}{input\+\_\+data\+\_\+prep.\+read\+\_\+input\+\_\+files} (filename)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file implements function used for reading, re-\/shaping and pre-\/processing the input datasets for T\+SS prediction. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{input__data__prep_8py_file_a606a19f2b7d753eea8e32d5160892457}\label{input__data__prep_8py_file_a606a19f2b7d753eea8e32d5160892457}} 
+\index{input\+\_\+data\+\_\+prep.\+py@{input\+\_\+data\+\_\+prep.\+py}!read\+\_\+input\+\_\+files@{read\+\_\+input\+\_\+files}}
+\index{read\+\_\+input\+\_\+files@{read\+\_\+input\+\_\+files}!input\+\_\+data\+\_\+prep.\+py@{input\+\_\+data\+\_\+prep.\+py}}
+\subsubsection{\texorpdfstring{read\+\_\+input\+\_\+files()}{read\_input\_files()}}
+{\footnotesize\ttfamily def input\+\_\+data\+\_\+prep.\+read\+\_\+input\+\_\+files (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function implements the loading of the input data, shuffling it and spliting it
+    into training and testing set. 
+    Params:
+      - filename: tab-delimited file containing locations of all input tables in format:
+                  <input_type>  <positive example file> <negative example file>
+    Example of such file:
+      CA    true_promoters/CA_pos.csv   false_promoters_dist350/CA_neg.csv
+      CG    true_promoters/CG_pos.csv   false_promoters_dist350/CG_neg.csv
+      COV   true_promoters/Coverage_pos.csv false_promoters_dist350/Coverage_neg.csv
+      MAF   true_promoters/MAF_pos.csv  false_promoters_dist350/MAF_neg.csv
+      METH  true_promoters/METH_pos.csv false_promoters_dist350/METH_neg.csv
+      seq   true_promoters/promoters_pos.csv    false_promoters_dist350/promoters_neg.csv
+      SNPs  true_promoters/SNPs_pos.csv false_promoters_dist350/SNPs_neg.csv
+      TATA  true_promoters/TATA_pos.csv false_promoters_dist350/TATA_neg.csv\end{DoxyVerb}
+ 

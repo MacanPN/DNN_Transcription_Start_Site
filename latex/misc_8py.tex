@@ -1,0 +1,55 @@
+\hypertarget{misc_8py}{}\section{misc.\+py File Reference}
+\label{misc_8py}\index{misc.\+py@{misc.\+py}}
+
+
+This file implements various miscelenious functions that used in the project.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{misc_8py_af9df57f896d45c72f3510219d1e904f8}{misc.\+filter2motif} (a)
+\item 
+def \hyperlink{misc_8py_a79d165808f86cefb5656770835b8c0f6}{misc.\+input\+\_\+layers\+\_\+of} (layer)
+\item 
+\mbox{\Hypertarget{misc_8py_ab5ca4b13e6a334e2c984b37886c65b3d}\label{misc_8py_ab5ca4b13e6a334e2c984b37886c65b3d}} 
+def {\bfseries misc.\+get\+Layer\+Index\+By\+Name} (model, layername)
+\item 
+def \hyperlink{misc_8py_a9afd94d53283181e83980bac0437cc3d}{misc.\+allow\+\_\+growth\+\_\+for\+\_\+default\+\_\+session} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{misc_8py_a1eb740729632e82b75066fbb44ab6a9a}\label{misc_8py_a1eb740729632e82b75066fbb44ab6a9a}} 
+dictionary {\bfseries misc.\+Number2\+Base} = \{0\+:\textquotesingle{}A\textquotesingle{}, 1\+:\textquotesingle{}C\textquotesingle{}, 2\+:\textquotesingle{}G\textquotesingle{}, 3\+:\textquotesingle{}T\textquotesingle{}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file implements various miscelenious functions that used in the project. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{misc_8py_file_a9afd94d53283181e83980bac0437cc3d}\label{misc_8py_file_a9afd94d53283181e83980bac0437cc3d}} 
+\index{misc.\+py@{misc.\+py}!allow\+\_\+growth\+\_\+for\+\_\+default\+\_\+session@{allow\+\_\+growth\+\_\+for\+\_\+default\+\_\+session}}
+\index{allow\+\_\+growth\+\_\+for\+\_\+default\+\_\+session@{allow\+\_\+growth\+\_\+for\+\_\+default\+\_\+session}!misc.\+py@{misc.\+py}}
+\subsubsection{\texorpdfstring{allow\+\_\+growth\+\_\+for\+\_\+default\+\_\+session()}{allow\_growth\_for\_default\_session()}}
+{\footnotesize\ttfamily def misc.\+allow\+\_\+growth\+\_\+for\+\_\+default\+\_\+session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Necessary in new version of tensorflow to make sure, that the memory is dinamicaly alocated.\end{DoxyVerb}
+ \mbox{\Hypertarget{misc_8py_file_af9df57f896d45c72f3510219d1e904f8}\label{misc_8py_file_af9df57f896d45c72f3510219d1e904f8}} 
+\index{misc.\+py@{misc.\+py}!filter2motif@{filter2motif}}
+\index{filter2motif@{filter2motif}!misc.\+py@{misc.\+py}}
+\subsubsection{\texorpdfstring{filter2motif()}{filter2motif()}}
+{\footnotesize\ttfamily def misc.\+filter2motif (\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Translate filter to motif of most weighted bases [positive, negative]\end{DoxyVerb}
+ \mbox{\Hypertarget{misc_8py_file_a79d165808f86cefb5656770835b8c0f6}\label{misc_8py_file_a79d165808f86cefb5656770835b8c0f6}} 
+\index{misc.\+py@{misc.\+py}!input\+\_\+layers\+\_\+of@{input\+\_\+layers\+\_\+of}}
+\index{input\+\_\+layers\+\_\+of@{input\+\_\+layers\+\_\+of}!misc.\+py@{misc.\+py}}
+\subsubsection{\texorpdfstring{input\+\_\+layers\+\_\+of()}{input\_layers\_of()}}
+{\footnotesize\ttfamily def misc.\+input\+\_\+layers\+\_\+of (\begin{DoxyParamCaption}\item[{}]{layer }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns the input layers of a given layer \end{DoxyVerb}
+ 
